@@ -12,7 +12,7 @@ async def on_ready():
     print(f'We have logged in as {bot.user}')
 
 @bot.command()
-async def hi(ctx):
+async def hello(ctx):
     await ctx.send(f'Привет! Я бот {bot.user}!')
 
 @bot.command()
