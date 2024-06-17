@@ -37,7 +37,7 @@ async def minus(ctx, left: int, right: int):
     await ctx.send(left - right)
 
 @bot.command()
-async def repeat(ctx, times: int, content='repeating...'):
+async def repeat(ctx, times: int, content: str):
     """Repeats a message multiple times (type: $repeat <number>)"""
     for i in range(times):
         await ctx.send(content)
